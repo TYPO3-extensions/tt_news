@@ -19,6 +19,7 @@ $hideNewLocalizations = ($confArr['hideNewLocalizations'] ? 'mergeIfNotBlank' : 
 // ******************************************************************
 // This is the standard TypoScript news table, tt_news
 // ******************************************************************
+$TCA['tt_news']['ctrl']['searchFields'] = 'title,keywords,bodytext,abstract';
 $TCA['tt_news'] = Array (
 	'ctrl' => $TCA['tt_news']['ctrl'],
 	'interface' => Array (
